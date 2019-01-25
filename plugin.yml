@@ -1,0 +1,10 @@
+name: Docker Compose
+description: Run a command locally on the current Buildkite instance
+author: https://github.com/stevenmatthewt
+configuration:
+  properties:
+    run:
+      type: string
+  oneOf:
+    - required:
+      - run

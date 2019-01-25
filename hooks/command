@@ -1,0 +1,3 @@
+#!/bin/bash
+
+eval $BUILDKITE_PLUGIN_COMMAND_RUN
