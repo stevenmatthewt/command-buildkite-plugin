@@ -1,4 +1,4 @@
-name: Docker Compose
+name: Command
 description: Run a command locally on the current Buildkite instance
 author: https://github.com/stevenmatthewt
 configuration:

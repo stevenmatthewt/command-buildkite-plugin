@@ -1,3 +1,9 @@
 #!/bin/bash
 
-eval $BUILDKITE_PLUGIN_COMMAND_RUN
+set -u
+
+if [ -n "${BUILDKITE_PLUGIN_COMMAND_RUN-}" ]; then
+    echo "A command must be specified!"
+fi
+
+eval ${BUILDKITE_PLUGIN_COMMAND_RUN-}
